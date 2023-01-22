@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    width: 100vw;
+}
+h1{
+    margin: 40px auto 0;
+    text-align: center;
+    font-size: 3rem;
+    width: 1200px;
+}
+.container{
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.box{
+    width: 100%;
+}
+img{
+    width: 100%;
+    border-radius: 10px;
+    filter: grayscale(100%);
+}
+img:hover{
+    filter: grayscale(0%);
+    transform: scale(1.03);
+    transition: all 0.5s ease;
+    filter: drop-shadow(0 0 10px #333);
+    
+}
+.box:hover figcaption{
+    opacity: 1;
+    transform: scale(1.03);
+}
+
+figcaption {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    display: block;
+    position: absolute;
+    bottom: 45px;
+    left: 25px;
+    opacity: 0;
+  }
+  figure {
+    position: relative;
+  }
